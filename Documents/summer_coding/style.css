@@ -1,0 +1,129 @@
+h1{
+	text-align: center;
+	color: black;
+}
+
+body{
+	background-image: url("fon3.gif");
+	background-attachment: fixed;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+canvas{
+	//margin:0 5.5%;
+}
+
+p{
+	font-family: "Garamond";
+}
+
+.res{
+	margin:auto;
+	
+}
+#four{
+	width: 45%;
+	text-align: center;
+	margin: auto;
+}
+
+
+#one{
+	width: 45%;
+	text-align: center;
+	margin: auto;
+}
+
+#two {
+	width: 45%;
+	text-align: center;
+}
+
+#three{
+	width: 45%;
+	padding-left: 8%;
+
+}
+
+.classes{
+	width: 90%;
+	margin: auto;
+}
+
+
+
+
+#compContainer canvas {
+	display: inline-block;
+	visibility: visible;
+}
+
+#compContainer{
+	display: inline-block;
+    margin-right: 10%;
+    float: right;
+}
+
+#utmContainer {
+	display: inline-block;
+	float: left;
+	margin-left: 10%;
+}
+
+#calcContainer{
+	display: inline-block;
+    margin-right: -6%;
+    margin-top: 18%;
+    float: right;
+}
+
+#bookContainer {
+	display: inline-block;
+	text-align: center;
+}
+
+
+#five{
+	
+	width: 45%;
+	text-align: center;
+	display: block;
+	margin-top: 1%;
+}
+
+#five p{
+font-style: italic;
+    margin: 0;
+}
+
+
+#cnContainer{
+	display: block;
+    margin-right: 5%;
+ 	float: right;
+ 	margin-top: 10%;
+}
+
+#jugsContainer{
+	display: inline-block;
+   	margin-top: -20%;
+    margin-left: 13%;
+    float: left;
+}
+
+#ptone, #pttwo{
+	display: inline-table;
+	margin-left: 5%;
+}
+
+#defaultCanvas0{
+	visibility: visible;
+}
+.updown{
+visibility:hidden;
+}
+.show{
+	visibility: visible;
+}
+
