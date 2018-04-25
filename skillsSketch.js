@@ -218,7 +218,7 @@ var ran;
 	p.setup = function() {
 		p.createCanvas(150,160);
 		p.stroke(255,0,0);
-		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/calc.gifcn", function(img) {
+		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/calc.gif", function(img) {
     	p.image(img, -50, -30,300,240);})
     	//759, 760,300,240
 		ran=true;
