@@ -19,7 +19,7 @@ var ran;
 		//compCanvas.parent('compContainer');
 		//compCanvas.style("border","1px solid black");
 		p.stroke(255,0,0);
-		p.loadImage("computer.gif", function(img) {
+		p.loadImage("pics/computer.gif", function(img) {
 		p.image(img, -240, -90,700,400);})
 		ran=false;
 		a=0;
@@ -104,7 +104,7 @@ var min;
 		//compCanvas.parent('compContainer');
 		//compCanvas.style("border","1px solid black");
 		p.stroke(255,0,0);
-		p.loadImage("utm.gif", function(img) {
+		p.loadImage("pics/utm.gif", function(img) {
     	p.image(img, -120, 0,500,400);})
     	//-80, 280,500,400);})
 		ran=true;
@@ -218,7 +218,7 @@ var ran;
 	p.setup = function() {
 		p.createCanvas(150,160);
 		p.stroke(255,0,0);
-		p.loadImage("calc.gif", function(img) {
+		p.loadImage("pics/calc.gif", function(img) {
     	p.image(img, -50, -30,300,240);})
     	//759, 760,300,240
 		ran=true;
@@ -304,7 +304,7 @@ var ran;
 	p.setup = function() {
 		p.createCanvas(200,380);
 		p.stroke(255,0,0);
-		p.loadImage("cn.gif", function(img) {
+		p.loadImage("pics/cn.gif", function(img) {
 		p.image(img, 30, 0,200,400);})
 		ran=false;
 		a=0;
@@ -391,7 +391,7 @@ var creat;
 	p.setup = function() {
 		p.createCanvas(200,300);
 		p.stroke(255,0,0);
-		p.loadImage("jugs.gif", function(img) {
+		p.loadImage("pics/jugs.gif", function(img) {
 		p.image(img, 0, 160,200,180);})
 		
 		bub=new Bubble(0);
@@ -476,7 +476,7 @@ var f;
 	p.setup = function() {
 		p.createCanvas(200,250);
 		p.stroke(255,0,0);
-		p.loadImage("book.gif", function(img) {
+		p.loadImage("pics/book.gif", function(img) {
 		p.image(img, -80, -10,350,350);})
 		ran=false;
 		arr=["Arial", "Courier New", "Georgia", "Times New Roman", "Trebuchet MS", "Verdana"];
