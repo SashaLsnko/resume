@@ -104,7 +104,7 @@ var min;
 		//compCanvas.parent('compContainer');
 		//compCanvas.style("border","1px solid black");
 		p.stroke(255,0,0);
-		p.loadImage("pics/utm.gif", function(img) {
+		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/utm.gif", function(img) {
     	p.image(img, -120, 0,500,400);})
     	//-80, 280,500,400);})
 		ran=true;
@@ -391,7 +391,7 @@ var creat;
 	p.setup = function() {
 		p.createCanvas(200,300);
 		p.stroke(255,0,0);
-		p.loadImage("pics/jugs.gif", function(img) {
+		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/jugs.gif", function(img) {
 		p.image(img, 0, 160,200,180);})
 		
 		bub=new Bubble(0);
