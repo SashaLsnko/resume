@@ -11,7 +11,7 @@
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.dom.min.js"></script>
     	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.12/addons/p5.sound.min.js"></script>
     	<script src="skillsSketch.js"></script>
-    	<script src="process.js"></script>
+    	<script src="query.js"></script>
 
 		<meta charset="utf-8">
 
@@ -29,91 +29,177 @@
 		
 		<img src="pics/skills.png" style="width: 80px;height: 60px;text-align: center;display: block;margin: auto;" >
 
-		<div id=compContainer class=kanvasy>
-		</div>
+		
  			<div id=one class=res>
-				<p>Software Design, Photography, Web Design, Graphic Design</p>
-				<p>Leadership - 2014-2016 President of Russian Club UTM</p>
-				<p>Communication - 2015-2016 Marketing Director of UTM Chess Club</p>
-				<p>Languages: English, Russian, French (beginner), HTML, CSS, Python, Java, JavaScript, p5.js, jQuery, C</p>
+ 				<table id=left>
+
+ 					<tr>
+ 						
+ 						<td> <div id=pythonContainer class=kanvasy> </div> </td>
+ 					</tr>
+ 					<tr class=second >
+ 						
+ 						<td> <div id=javaScriptContainer class=kanvasy> </div> </td>
+ 						
+ 					</tr>
+ 					<tr>
+ 						
+ 						<td> <div id=htmlContainer class=kanvasy> </div> </td>
+ 					</tr>
+ 					<tr class=second>
+ 						<td> <div id=racketContainer class=kanvasy> </div> </td>
+ 					</tr>
+ 					<tr>
+ 						<td> <div id=jQContainer class=kanvasy> </div> </td>
+ 					</tr>
+ 					
+ 				</table>
+
+ 				<table id=right>
+
+ 					<tr>
+ 						<td> <div id=javaContainer class=kanvasy> </div> </td>
+ 						
+ 					</tr>
+ 					<tr class=second >
+ 						<td> <div id=cContainer class=kanvasy> </div> </td>
+ 						
+ 					</tr>
+ 					<tr>
+ 						
+ 						<td> <div id=cssContainer class=kanvasy> </div> </td>
+ 						
+ 					</tr>
+ 					<tr class=second>
+ 						
+ 						<td> <div id=haskellContainer class=kanvasy> </div> </td>
+ 						
+ 					</tr>
+ 					<tr>
+ 						<td> <div id=angularContainer class=kanvasy> </div> </td>
+ 						
+ 					</tr>
+ 					
+ 				</table>
 
 			</div>
 
-		<img src="pics/education.png" style="width: 120px;height: 65px;text-align: center;display: block;margin: auto;" >
+			<div id=compContainer class=kanvasy>
+		</div>
+
 		
+		<div id=two class=res>
+				<div id="uni_par">
+				<img src="pics/education.png" style="width: 120px;height: 65px;text-align: center;display: block;margin: auto;" >
+					<p style="text-align:center;">
+					2013 - present: University of Toronto.
+					</p>
+					<ul>
+						<li> Computer Science [Minor] </li>
+						<li> Visual Culture [Minor] </li>
+						<li> Communication, Culture, Information & Technology [Major] </li>
+					</ul>
+					
+					<p style="text-align:center;text-decoration: underline;">
+					Relevant Courses taken at UofT:
+					</p>
+				</div>
+				<table id=classes>
+					
+					<tr>
+						<td id=108> 
+						<p>Introduction to Computer Programming </p>
+						</td>
+						<td id=369> 
+						Operating Systems
+						</td>
+						
+					</tr>
+					<tr>
+						<td id=324> 
+						Principles of Programming Languages
+						</td>
+						<td id=263> 
+						Data Structures and Analysis
+						</td>
+						
+					</tr>
+					<tr>
+						<td id=236> 
+						Introduction to the Theory of Computation
+						</td>
+						<td id=258> 
+						<p>Computer Organization</p>
+						</td>
+					</tr>
+					<tr>
+						<td id=148> 
+						Introduction to Computer Science
+						</td>
+						<td id=wd> 
+						Web Design
+						</td>
+					</tr>
+					<tr>
+						<td id=209> 
+						Software Tools and Systems Programming
+						</td>
+						<td id=207>
+						Software Design
+						</td> 
+					</tr>
+					<tr>
+						<td id=301> 
+						Introduction to Software Engineering
+						</td>
+						<td>
+						... and more to come
+						</td>
+					</tr>
+
+
+
+				</table>
+
+			</div>
+			<div id=calcContainer class=kanvasy>
+			</div>
+
 		<div id=utmContainer class=kanvasy>
 		</div>
-
-		<div id=calcContainer class=kanvasy>
-			</div>
 		
-			<div id=two class=res>
-				<p>
-				2013-present: University of Toronto.
-				</p>
-				<p>
-				Minor - Computer Science, Visual Culture
-				</p>
-				<p>
-				Major - Communication, Culture, Information & Technology 
-				</p>
-				<p>
-				Courses taken:
-				</p>
-				<p class=classes>
-				Introduction to Computer Programming, Introduction to Computer Science, Computer Organization, Software Design, Introduction to the Theory of Computation, Advanced Web Design, Software Tools and Systems Programming.
-				</p>
-				<p>
-				Certificates:
-				</p>
-				<p>
-				Junior nurse certificate (Russia), 2013
-				</p>
-				<p>
-				UTM International Life, 2014
-				</p>
-			</div>
-		
-		<img src="pics/experience.png" style="width: 110px;height: 70px;text-align: center;display: block;margin: auto;" >
+		<img src="pics/experience.png" id="tohide"  >
 
 		
 
 		<div id=three class=res>
-			<div id=ptone>
-				<p>
-				January, 2017 - May, 2017
-				</p>
-				<p>
-				January, 2017 - May, 2017
-				</p>
-				<p>
-				March, 2016- Present
-				</p>
-				<p>
-				September, 2014 - September, 2015 
-				</p>
-				<p>
-				September, 2011 - May, 2012
-				</p>
-			</div>
-			<div id=pttwo>
-				<p>
-				TA for Introduction to Programming 
-				</p>
-				<p>
-				JavaScript Coach at Hatch Canada
-				</p>
-				<p>
-				Freelance photographer
-				</p>
-				<p>
-				“Demetres”, hostess, waiter 
-				</p>
-				<p>
-				Chemistry tutor
-				</p>
-			</div>
+			<table >
+			<tbody style="border-bottom: 2px solid white;">
+			    <tr>
+			      <td scope="row">January, 2018 - May, 2018</td>
+			      <td scope="row">TA for Introduction to Computer Science (csc148)</td>
+			    </tr>
+			</tbody>
+			</table>
+			<table >
+			<tbody style="border-bottom: 2px solid white;">
+			    <tr>
+			      <td scope="row">September, 2017 - December, 2017 </td>
+			      <td rowspan="2" scope="rowgroup">TA for Introduction to Programming (csc108)</td>
+			    </tr>
+			    <tr>
+			      <td scope="row">January, 2017 - May, 2017</td>
+			    </tr>
+			</tbody>
+			</table>
+			<table>
+			    <tr>
+			      <td scope="row" id=prelast>January, 2017 - May, 2018</td>
+			      <td scope="row" id=last>Javascript and Python Coach at Hatch Canada</td>
+			    </tr>
+			</table>
 		</div>
+
 
 		
 		
@@ -136,8 +222,9 @@
 			Paint application [Java] + Object Oriented Programming + Design Patterns
 			</p>
 
-			<div id=bookContainer  class=kanvasy>
 		</div>
+
+		<div id=bookContainer  class=kanvasy>
 		</div>
 
 		
@@ -150,9 +237,7 @@
 			If you are looking for a CEO, don't hesitate to contact me
 			</p>
 			<img src="pics/gmail.gif" style="width: 200px;height: 60px;text-align: center;display: block;margin: auto;" >
-			<p>
-			You can also check out my photos on Instagram - @cawa.l 
-			</p>
+			
 		</div>
 
 

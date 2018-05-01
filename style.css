@@ -23,28 +23,89 @@ p{
 	
 }
 #four{
-	width: 45%;
 	text-align: center;
-	margin: auto;
+	width: 50%;
+}
+
+#four p{
+	text-align: center;
 }
 
 
 #one{
 	width: 45%;
 	text-align: center;
-	margin: auto;
+	display: block;
+}
+
+#one table {
+	text-align: center;
+	width: 49%;
+	padding: 2%;
+	
+
+}
+#one table td{
+	padding: 0%;
+}
+
+#left {
+  float: left;
+  overflow: hidden;
+}
+#right {
+  overflow: hidden;
+}
+
+.second td{
+	font-style: italic;
 }
 
 #two {
 	width: 45%;
-	text-align: center;
+	text-align: justify;
 }
+
+#two td{
+	text-align: left;
+	padding: 2%;
+	width: 48%;
+	height: 40px;
+   	background-color:rgba(255, 255, 255, 0.5);
+
+}
+
+#two table{
+	border-spacing: 10px;
+}
+
+
 
 #three{
-	width: 45%;
-	padding-left: 8%;
+	width: 60%;
+	text-align: left;
+	margin: auto;
+	
 
 }
+
+#three table{
+	width:100%;
+	margin: auto;
+	display: flex;
+}
+#three table tbody{
+	margin: auto;
+}
+
+#three table td{
+	padding: 2%;
+	width: 300px;
+}
+
+
+
+
 
 .classes{
 	width: 90%;
@@ -63,24 +124,30 @@ p{
 	display: inline-block;
     margin-right: 10%;
     float: right;
+    margin-top: -10%;
 }
 
 #utmContainer {
 	display: inline-block;
 	float: left;
-	margin-left: 10%;
+	margin-left: 5%;
+	margin-top: -40%;
+	width:10px;
 }
 
 #calcContainer{
 	display: inline-block;
-    margin-right: -6%;
-    margin-top: 18%;
+    margin-right: 15%;
+    margin-top: 0;
     float: right;
 }
 
 #bookContainer {
 	display: inline-block;
-	text-align: center;
+	position: relative;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
 }
 
 
@@ -99,16 +166,17 @@ font-style: italic;
 
 
 #cnContainer{
-	display: block;
+	position: absolute;
+	width: 100%;
     margin-right: 5%;
- 	float: right;
+ 	text-align: right;
  	margin-top: 10%;
 }
 
 #jugsContainer{
 	display: inline-block;
-   	margin-top: -20%;
-    margin-left: 13%;
+   	margin-top: -17%;
+    margin-left: 7%;
     float: left;
 }
 
@@ -125,5 +193,208 @@ visibility:hidden;
 }
 .show{
 	visibility: visible;
+}
+
+.grade{
+	border-radius: 50%;
+	float: right;
+	width: 40px;
+	height: 40px;
+}
+
+li{
+	line-height: 30px;
+}
+
+#tohide{
+		width: 110px;
+		height: 70px;
+		text-align: center;
+		display: block;
+		margin: auto; 
+		padding-top: 5%;
+	}
+
+@media screen and (max-width: 1200px) {
+	#compContainer{
+	    margin-right: 2%;
+	}
+	#one{
+		width: 50%;
+		margin: none;
+	}
+	#jugsContainer{
+		display: none;
+	}
+	#cnContainer{
+	 	margin-top: 15%;
+	}
+}
+
+@media screen and (max-width: 1050px) {
+	#compContainer{
+	    margin-right: 0;
+	}
+	#one{
+		width: 60%;
+		margin: none;
+	}
+	#two {
+		width: 80%;
+	}
+	#utmContainer {
+		margin-top: -2%;
+		margin-left: 0%;
+	}
+	#two table{
+		display: table;
+  		margin: 0 auto;
+  		width: 100%;
+
+	}
+	#two table td{
+		height: 50px;
+	}
+	#uni_par{
+		width: 70%;
+		margin: auto;
+	}
+	#cnContainer{
+	 	margin-top: 18%;
+	}
+	#calcContainer{
+		display: none;
+	}
+}
+
+@media screen and (max-width: 960px) {
+	#compContainer{
+	    margin-top:0;
+	    margin-right:-2%;
+	}
+
+	#utmContainer {
+		margin: 0 auto;
+	    width: 100%;
+	    text-align: center;
+	}
+	#tohide{
+		width: 110px;
+		height: 70px;
+		text-align: center;
+		display: block;
+		margin: 0 auto; 
+		padding-top: 0;
+	}
+	#cnContainer{
+	 	margin-top: 21%;
+	}
+	#four{
+		width: 70%;
+	}
+}
+
+@media screen and (max-width: 860px) {
+	#one{
+		width: 80%;
+	}
+	#cnContainer{
+	 	margin-top: 25%;
+	}
+	#uni_par{
+		width: 80%;
+	}
+	#three{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	#one{
+		width: 90%;
+	}
+	#two {
+		width: 90%;
+	}
+	#two table td{
+		height: 60px;
+	}
+	#uni_par{
+		width: 80%;
+		margin: auto;
+	}
+	#cnContainer{
+	 	margin-top: 28%;
+	}
+	#uni_par{
+		width: 100%;
+	}
+	#four{
+		width: 80%;
+	}
+}
+
+@media screen and (max-width: 620px) {
+	#one{
+		width: 100%;
+	}
+	#two {
+		width: 100%;
+	}
+	#two table td{
+		height: 65px;
+
+	}
+	#cnContainer{
+	 	margin-top: 40%;
+	}
+	#three{
+		width: 90%;
+	}
+	#four{
+		width: 90%;
+	}
+}
+
+@media screen and (max-width: 530px) {
+	#one{
+		//time to do 1 column
+		width: 100%;
+	}
+	#one table{
+		padding: 0;
+	}
+	#left {
+	  float: none;
+	  overflow: none;
+	  margin:auto;
+	  width:100;
+	}
+	#right {
+	  overflow: hidden;
+	  margin:auto;
+	}
+	#two {
+		width: 100%;
+		clear: both;
+		margin:auto;
+	}
+	#two table td{
+		height: 70px;
+	}
+	#compContainer{
+	    margin: auto;
+	    width: 100%;
+	    text-align: center;
+	}
+	#cnContainer{
+	 	margin-top: 50%;
+	}
+	#three{
+		width: 95%;
+	}
+	#four{
+		width: 100%;
+	}
 }
 

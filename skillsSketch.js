@@ -15,9 +15,6 @@ var ran;
 
 	p.setup = function() {
 		p.createCanvas(200,260);
-		//p.data.show();
-		//compCanvas.parent('compContainer');
-		//compCanvas.style("border","1px solid black");
 		p.stroke(255,0,0);
 		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/computer.gif", function(img) {
 		p.image(img, -240, -90,700,400);})
@@ -27,10 +24,6 @@ var ran;
 		c=0;
 
 	};
-
-	//p.windowResized=function() {
-  	//	resizeCanvas(windowWidth, 500);
-	//s};
 
 	p.batons =function(){
 		p.noFill();
@@ -100,13 +93,9 @@ var min;
 
 	p.setup = function() {
 		p.createCanvas(250,260);
-		//p.data.show();
-		//compCanvas.parent('compContainer');
-		//compCanvas.style("border","1px solid black");
 		p.stroke(255,0,0);
 		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/utm.gif", function(img) {
     	p.image(img, -120, 0,500,400);})
-    	//-80, 280,500,400);})
 		ran=true;
 		a=0;
 		b=0;
@@ -165,10 +154,7 @@ var min;
 		p.changeColor();
 		p.ellipse(68,196,5,5);
 
-
-
-
-	};
+};
 
 	
 
@@ -184,22 +170,10 @@ var min;
 		}
 		p.utmEllipses();
 		p.fill(0);
-		/*
-		p.textSize(20);
-		p.noStroke();
-		p.text(p.mouseX,p.mouseX+30,p.mouseY);
-		p.text(p.mouseY,p.mouseX+30,p.mouseY+30);
-		*/
 	};
 };
 
 	new p5(t,'utmContainer');
-
-
-
-
-
-
 
 
 ///////////////////////////////////CALCULATOR///////////////////////////////////////////////////////////
@@ -220,7 +194,6 @@ var ran;
 		p.stroke(255,0,0);
 		p.loadImage("https://raw.githubusercontent.com/SashaLsnko/resume/master/pics/calc.gif", function(img) {
     	p.image(img, -50, -30,300,240);})
-    	//759, 760,300,240
 		ran=true;
 		a=0;
 		b=0;
@@ -514,8 +487,94 @@ var f;
 
 	new p5(l,'bookContainer');
 
+
+
+
+/////////////////////////////////// STARS ///////////////////////////////////////////////////////////
+
+var workbitch = function(word, num){
+	return function(p) {
+		p.setup = function() {
+			p.createCanvas(233,40);
+			p.noStroke();
+			p.textSize(15);
+			p.text(word,10,15);
+			
+		};
+
+		p.draw = function() {
+
+			if (p.mouseX>0 && p.mouseX<233 && p.mouseY>0 && p.mouseY<40){
+				p.noStroke();
+				for(i=0; i<num; i++){
+					p.fill(p.random(150,255),100,p.random(100,150),180);
+					p.ellipse(30*i+100,13,21,21);
+				}
+				p.strokeWeight(2);
+				for(i=num; i<5; i++){
+					p.stroke(p.random(150,255),100,p.random(100,150),180);
+					p.fill(252, 207, 236);
+					p.ellipse(30*i+100,13,20,20);
+				}
+			}
+			
+			else{
+				p.noStroke();
+				for(i=0; i<num; i++){
+					p.fill(252, 207, 236);
+					p.ellipse(30*i+100,13,21,21);
+
+					p.fill(50,50,50,150);
+					p.ellipse(30*i+100,13,20,20);
+				}
+				p.strokeWeight(2);
+				for(i=num; i<5; i++){
+					p.stroke(252, 207, 236);
+					p.ellipse(30*i+100,13,20,20);
+
+					p.stroke(50,50,50,150);
+					p.fill(252, 207, 236);
+					p.ellipse(30*i+100,13,19,19);
+				}
+
+			}
+		};
+	};
+};
+
+
 	
+	var py = workbitch("Python", 5);
+	new p5(py,'pythonContainer');
+
+	var java = workbitch("Java", 3);
+	new p5(java,'javaContainer');
+
+	var javaScript = workbitch("JavaScript", 5);
+	new p5(javaScript,'javaScriptContainer');
+
+	var c = workbitch("C", 5);
+	new p5(c,'cContainer');
+
+	var html = workbitch("HTML", 5);
+	new p5(html,'htmlContainer');
+
+	var css = workbitch("CSS", 5);
+	new p5(css,'cssContainer');
+
+	var racket = workbitch("Racket", 3);
+	new p5(racket,'racketContainer');
+
+	var haskell = workbitch("Haskell", 3);
+	new p5(haskell,'haskellContainer');
+
+	var jQ = workbitch("jQuery", 3);
+	new p5(jQ,'jQContainer');
+
+	var angular = workbitch("Angular", 4);
+	new p5(angular,'angularContainer');
 
 
+//pink p.fill(252, 207, 236);
 
 
